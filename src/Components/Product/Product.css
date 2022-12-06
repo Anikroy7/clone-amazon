@@ -27,9 +27,10 @@
 
 .product>button {
     background: rgb(224, 199, 153);
-    padding: 5px;
+    padding: 10px;
     border: none;
     color: rgb(64, 21, 21);
     font-weight: 500;
+    border-radius: 10px;
 
 }

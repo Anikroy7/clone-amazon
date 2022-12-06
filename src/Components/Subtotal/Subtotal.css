@@ -1,9 +1,11 @@
 .subtotal {
     background: rgba(234, 237, 237);
-    padding: 10px;
-    width: 300px;
+    margin-left: 30px;
+    max-width: 300px;
     padding: 20px;
     border: 1px solid rgb(188, 188, 188);
+    position: sticky;
+    top: 95px;
 }
 
 .subtotal_status {
