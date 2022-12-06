@@ -1,13 +1,15 @@
 import React from 'react';
 import './Header.css';
-import logo from '../assets/icons/amazon_logo.png';
+import logo from '../../assets/icons/amazon_logo.png';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
 
 const Header = () => {
-    return (
+    const [state] = useStateValue();
 
+    return (
         <section className='header'>
 
             {/* Header logo and search field */}
@@ -39,7 +41,7 @@ const Header = () => {
 
                 <div className="header_basket">
                     <Link to='/checkout'><ShoppingBasketIcon className='header_basket_icon' /></Link>
-                    <span className='header_option_second_line header_option'>0</span>
+                    <span className='header_option_second_line header_option'>{state.basket.length}</span>
                 </div>
             </div>
 

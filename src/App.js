@@ -1,10 +1,9 @@
 import './App.css';
-import Header from './Header/Header';
-import Home from './Home/Home';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
 import { Routes, Route, } from "react-router-dom";
-import CheakoutPage from './CheakoutPage/CheakoutPage';
 import NotFound from './NotFound';
-
+import CheckoutPage from './Components/CheckoutPage/CheckoutPage';
 function App() {
 
   return (
@@ -24,7 +23,7 @@ function App() {
           element={(
             <>
               <Header />
-              <CheakoutPage />
+              <CheckoutPage />
             </>
           )}
         />

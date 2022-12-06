@@ -1,0 +1,27 @@
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 30px;
+}
+
+
+.checkout_empty_logo {
+    width: 400px;
+    object-fit: contain;
+    max-height: 100px;
+}
+
+
+.basket_heading_active {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.basket_heading {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
